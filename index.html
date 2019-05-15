@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Rollera - Roll the dice</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+        <link rel="stylesheet" href="stylesheet.css">
+        <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    </head>
+    <body>
+        <section class="hero is-info is-fullheight">
+            <div class="hero-head">
+                <div class="container">
+                    <h1 class="brand title is-2 has-text-centered">Rollera</h1>
+                </div>
+            </div>
+                
+            <div class="hero-body ">
+                <div class="container has-text-centered">
+                    <div class="columns">
+                        <div class="column dice-container">
+                            <h2 class="title is-4">Option 1</h2>
+                            <figure class="image container dice">
+                                <img class="dice1" src="img/dice-1.png">
+                            </figure>
+                        </div>
+                        <div class="column dice-container">
+                            <h2 class="title is-4">Option 2</h2>
+                            <figure class="image container dice">
+                                <img class="dice2"src="img/dice-1.png">
+                            </figure>
+                        </div>
+                    </div>
+
+                    <div class="buttons are-medium is-centered">
+                        <a class="button set-options">Set Options</a>
+                        <a class="button roll">Roll Dice</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!--
+            <div class="hero-foot">
+                <nav class="tabs is-boxed is-fullwidth">
+                    <div class="container">
+                        <ul>
+                            <li class="is-active">
+                            <a>Roll Dice</a>
+                            </li>
+                            <li>
+                            <a>Reset</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            -->
+        </section>
+
+        <div class="modal">
+            <div class="modal-background"></div>
+            <div class="modal-card">
+                <header class="modal-card-head">
+                <p class="modal-card-title">Set your options</p>
+                <button class="delete" aria-label="close"></button>
+                </header>
+                <section class="modal-card-body">
+                    <div class="field">
+                        <label class="label">Option 1</label>
+                        <div class="control">
+                            <input class="input" type="text" placeholder="e.g Sushi">
+                        </div>
+                        </div>
+
+                        <div class="field">
+                        <label class="label">Option 2</label>
+                        <div class="control">
+                            <input class="input" type="email" placeholder="e.g. Pizza">
+                        </div>
+                    </div>
+                </section>
+                <footer class="modal-card-foot">
+                <button class="button is-success">Save changes</button>
+                <button class="modal-cancel button">Cancel</button>
+                </footer>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="content has-text-centered">
+            <p>
+                <strong>Rollera</strong> by <a href="https://jgthms.com">Aron Tolentino</a>.
+            </p>
+            </div>
+        </footer>
+        <script src="app.js"></script>
+    </body>
+</html>
